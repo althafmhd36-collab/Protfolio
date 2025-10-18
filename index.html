@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Modern Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="./portfolio.js"></script>
+ <link rel="icon" type="image/x-icon" href="favcone.jpg">
+
+  <style>
+    html { scroll-behavior: smooth; }
+  </style>
+  <!-- EmailJS Library -->
+<script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+    emailjs.init("wyxXNayqB-9Be05oe");
+   })();
+</script>
+
+
+
+  
+</head>
+
+<body  class="bg-yellow-50/80  backdrop:blur-sm text-gray-800 font-sans"> 
+
+<!-- ===== BOTTOM NAVBAR ===== -->
+  <nav class="fixed bottom-0 left-0 w-full bg-yellow-700/80 backdrop-blur-md shadow-md z-50">
+    <div class="max-w-md mx-auto flex justify-around items-center py-3 text-black transform rounded-3xl opacity-100">
+      <a href="#home" class="flex flex-col items-center text-sm font-medium hover:text-yellow-700 transition">
+        <span class="material-symbols-outlined text-xl">home</span>
+        Home
+      </a>
+      <a href="#about" class="flex flex-col items-center text-sm font-medium hover:text-yellow-700 transition">
+        <span class="material-symbols-outlined text-xl">person</span>
+        About
+      </a>
+      <a href="#skills" class="flex flex-col items-center text-sm font-medium hover:text-yellow-700 transition">
+        <span class="material-symbols-outlined text-xl">build</span>
+        Skills
+      </a>
+      <a href="#projects" class="flex flex-col items-center text-sm font-medium hover:text-yellow-700 transition">
+        <span class="material-symbols-outlined text-xl">work</span>
+        Projects
+      </a>
+      <a href="#contact" class="flex flex-col items-center text-sm font-medium hover:text-yellow-700 transition">
+        <span class="material-symbols-outlined text-xl">mail</span>
+        Contact
+      </a>
+         
+    </div>
+  </nav>
+
+  <!-- Google icons for navbar icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+ 
+     <div class="w-full h-10 bg-yellow-50 fixed z-50">
+      <h2 class=" font-sans font-bold  relative left-5 top-2 ">Muhammed Althaf</h2>
+     </div>  
+      <!-- ===== HOME SECTION ===== -->
+  <section id="home" class="pt-28 pb-20 px-6  bg-yellow-100">
+    <div class="max-w-4xl mx-auto flex flex-col items-center text-center">
+      
+      <!-- Photo -->
+      <div class="relative w-56 h-56 md:w-72 md:h-72 rounded-full  overflow-hidden shadow-lg border-8 border-gray-200 mb-8">
+        <img src="althaf.jpg" 
+             alt="Profile Photo" 
+             class="w-full h-full object-cover" />
+             
+      </div>
+
+      <!-- Text -->
+      <p class="text-gray-500 text-sm mb-2 uppercase tracking-wide">Hey, I'm</p>
+      <h1 class="text-4xl md:text-5xl font-extrabold leading-tight mb-4">
+        A <span class="text-yellow-500">WEB</span>  Developer
+      </h1>
+      <p class="text-gray-600 mb-6 max-w-2xl">
+        "I don’t just build websites — I build digital identities</p>
+      <div class="flex gap-5">
+       
+         <a href="#contact"><button  class=" bg-yellow-500 w-40 pl-2 pr-2 py-2 rounded-full font-bold">contact me</button></a>
+        
+       <button class=" border-2 w-40  pl-2 pr-2 p-1 border-yellow-500 rounded-full font-bold">
+        download CV
+       </button>
+      </div>
+      
+      </section>
+
+  <!-- ===== ABOUT SECTION ===== -->
+  <section id="about" class="py-20 px-6">
+    <div class="max-w-5xl mx-auto grid md:grid-cols-2 gap-10 items-center">
+      <div>
+        <h2 class="text-3xl font-bold mb-4 text-blue-950-300">About Me</h2>
+        <p class="text-gray-600 leading-relaxed">
+          I’m a passionate web developer who loves transforming ideas into interactive digital experiences. I focus on creating clean, responsive, and visually engaging designs that deliver both creativity and functionality. With a strong eye for detail and a deep understanding of modern UI/UX principles, I aim to craft websites that not only look great but also provide seamless user experiences. I enjoy learning new technologies, improving my design skills, and constantly challenging myself to build better and smarter digital solutions.
+        </p>
+        
+        </p>
+      </div>
+
+      <div class="rounded-2xl overflow-hidden shadow-md">
+        <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4" alt="Workspace" class="w-full h-full object-cover">
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SKILLS SECTION ===== -->
+  <section id="skills" class="py-20 px-6">
+    <div class="max-w-5xl mx-auto text-center ">
+      <h2 class="text-3xl font-bold mb-10 text-gray-900">Skills</h2>
+      <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-8">
+       
+        <div class="bg-white   shadow-lg p-9 rounded-xl hover:scale-105 transition items-center text-center ">
+          <img  class="h-20 mx-auto " src="html5-day.svg" alt="" >
+          <h3 class="font-semibold text-lg mb-2 text-yellow-900">HTML-5</h3>
+          <p class="text-gray-600 text-sm ">Building the structure and foundation of modern,</p>
+        </div> 
+         
+
+
+
+        <div class="bg-white shadow-lg p-6 rounded-xl hover:scale-105 transition">
+         <img  class="h-20 mx-auto"  src="css3.png" alt="">
+          <h3 class="font-semibold text-lg mb-2 text-yellow-900">CSS 3</h3>
+          <p class="text-gray-600 text-sm">Designing beautiful layouts and animations with precision and creativity</p>
+           </div>
+
+
+        <div class="bg-white shadow-lg p-6 rounded-xl hover:scale-105 transition">
+         <img  class="h-10 mx-auto" src="tailwindcss-mark.d52e9897.svg" alt="">
+          <h3 class="font-semibold text-lg mb-2 text-yellow-900">Tailwind css</h3>
+          <p class="text-gray-600 text-sm">Creating fast, responsive designs with clean utility-first classes</p>
+        </div>
+        <div class="bg-white shadow-lg p-6 rounded-xl hover:scale-105 transition">
+          <img  class="h-20 mx-auto" src="js-brands.svg" alt="">
+          <h3 class="font-semibold text-lg mb-2 text-yellow-900">JavaScript</h3>
+          <p class="text-gray-600 text-sm">Adding interactivity and logic to bring websites to life</p>
+        </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROJECTS SECTION ===== -->
+  <section id="projects" class="py-20 px-6 ">
+    <div class="max-w-6xl mx-auto text-center">
+      <h2 class="text-3xl font-bold mb-10 text-gray-900">Projects</h2>
+
+      <div class="grid sm:grid-cols-2 lg:grid-cols-2 gap-8">
+        <div class="rounded-xl overflow-hidden shadow-2xl hover:scale-105 transition">
+          <img src="project.png" alt="Project 1" class="h-48 w-full object-cover">
+          <div class="p-5">
+            <h3 class="text-xl font-semibold mb-2 text-gray-900">Project One</h3>
+            <p class="text-gray-600 text-sm">Modern landing page design for a travel booking platform called Triago.
+</p>
+          </div>
+        </div>
+
+        <div class="rounded-xl overflow-hidden shadow-2xl hover:scale-105 transition">
+          <img src="project2.png" alt="Project 2" class="h-10 w-full object-cover ">
+          <div class="p-5">
+            <h3 class="text-xl font-semibold mb-2 text-gray-900 relative top-36">Project Two</h3>
+            <p class="text-gray-600 text-sm relative top-36">Responsive header design inspired by W3Schools for a web learning platform.</p>
+          </div>
+        </div>
+
+       
+      </div>
+    </div>
+  </section>                                                                                 
+
+ 
+
+  <!-- ===== CONTACT SECTION ===== -->
+   <section id="contact" class="py-20 px-6 ">
+    <div class="max-w-4xl mx-auto text-center">
+      <h2 class="text-3xl font-bold mb-6 text-gray-900">Contact</h2>
+      <p class="text-gray-600 mb-10">Let’s work together to create something amazing. Drop me a message!</p>
+
+   
+
+      <form onsubmit="sendMail(event)" class="grid gap-6 max-w-md mx-auto">
+  <input id="contactme" type="text" placeholder="Your Name" class="p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-700" />
+  <input id="email" type="email" placeholder="Your Email" class="p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-700" />
+  <textarea id="message" placeholder="Your Message" rows="4" class="p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-700"></textarea>
+  <button id="button" type="submit" class="bg-yellow-700 text-white py-3 rounded-full hover:bg-yellow-800 transition">
+    Send Message
+  </button>
+</form>
+
+
+      
+    </div> 
+
+
+  <!-- ===== POPUP MESSAGE (HIDDEN BY DEFAULT) ===== -->
+  <div id="popup"
+    class="hidden fixed inset-0 bg-black/50 backdrop-blur-sm flex justify-center items-center z-50">
+    <div class="bg-white rounded-2xl p-6 shadow-lg text-center w-80">
+      <h3 id="popup-title" class="text-xl font-bold mb-2">Success!</h3>
+      <p id="popup-message" class="text-gray-600 mb-4">Your message was sent successfully.</p>
+      <button onclick="closePopup()"
+        class="bg-yellow-700 text-white py-2 px-5 rounded-full hover:bg-yellow-800 transition">
+        OK
+      </button>
+    </div>
+  </div> 
+
+  <div class="flex justify-center relative top-5 py-5 gap-5">
+    <!-- <a href="www.linkedin.com/in/muhammed-althaf-1a831338b">
+      <img class="h-5" src="linked.png" alt="">
+    </a> -->
+    <a href="https://www.linkedin.com/in/muhammed-althaf-1a831338b" target="_blank" rel="noopener noreferrer">
+  <img class="h-5" src="linked.png" alt="LinkedIn">
+</a>
+    <a href="">
+      <img class="h-5" src="github.png" alt="">
+    </a>
+  </div>
+ 
+  <!-- ===== FOOTER ===== -->
+  <footer class="py-6 text-center text-sm text-gray-500 bg-white border-t ">
+    © 2025 Muhammed althaf — All Rights Reserved
+  </footer>
+
+</body>
+</html>
